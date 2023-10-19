@@ -6,11 +6,11 @@ public class PhoneBook {
 
         HashMap<String, HashSet<String>> phoneBook = new HashMap<>();
 
-        addNumber(phoneBook, "Иванов", "111-111-111");
-        addNumber(phoneBook, "Петров", "222-222-222");
-        addNumber(phoneBook, "Сидоров", "333-333-333");
-        addNumber(phoneBook, "Иванов", "444-444-444");
-        addNumber(phoneBook, "Сидоров", "555-555-555");
+        addNumber(phoneBook, "Aghamov", "051-731-19-20");
+        addNumber(phoneBook, "Korshunov", "050-800-19-20");
+        addNumber(phoneBook, "Aliyev", "051-731-19-71");
+        addNumber(phoneBook, "Korshunov", "055-427-50-00");
+        addNumber(phoneBook, "Aghamov", "051-250-97-97");
 
         printPhoneBook(phoneBook);
     }
@@ -29,7 +29,7 @@ public class PhoneBook {
         list.sort((o1, o2) -> o2.getValue().size() - o1.getValue().size());
 
         for (Map.Entry<String, HashSet<String>> entry : list) {
-            System.out.println("Имя: " + entry.getKey() + ", Телефоны: " + entry.getValue());
+            System.out.println("Name: " + entry.getKey() + ", Phone: " + entry.getValue());
         }
     }
 }
